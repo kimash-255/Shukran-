@@ -9,17 +9,14 @@ import Layout from "./Layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const EventsPage = () => {
   return (
-
     <div>
-    <Layout>
-      
-    </Layout>
-     <Hero />
-     <Events/>
-    <Footer/>
+      <Header />
+      <Events />
+      <Footer />
     </div>
-    
   );
-}
+};
+
+export default EventsPage;
