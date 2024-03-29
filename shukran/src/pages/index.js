@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Events from "@/components/events";
 import Layout from "./Layout";
+import Accommodation from "@/components/accomodation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
     </Layout>
      <Hero />
      <Events/>
+     <Accommodation/>
     <Footer/>
     </div>
     
