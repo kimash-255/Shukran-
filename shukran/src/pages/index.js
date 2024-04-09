@@ -7,6 +7,7 @@ import Header from "@/components/header";
 import Events from "@/components/events";
 import Layout from "./Layout";
 import Accommodation from "@/components/accomodation";
+import ShukranRecreation from "@/components/recreation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
      <Hero />
      <Events/>
      <Accommodation/>
+     <ShukranRecreation/>
     <Footer/>
     </div>
     

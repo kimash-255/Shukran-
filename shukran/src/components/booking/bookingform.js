@@ -21,19 +21,24 @@ const BookingForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
       console.log('Form data:', formData); // Log form data before sending the request
-
+  
+      const adminEmail = 'rexviscot44@gmail.com'; // Replace with the admin's email address
+  
       const templateParams = {
         ...formData,
+        to_email: adminEmail, // Send email to the admin
+        cc_email: formData.email, // CC the email entered in the form
       };
-
+  
       // Send email using EmailJS
-      await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams, 'YOUR_USER_ID');
-
+      await emailjs.send('service_znnc5im', 'template_s2hz3zb', templateParams, 'zQzgZwBMdYJEfHh5j');
+      
+  
       console.log('Booking submitted successfully');
-
+  
       // Reset form fields after successful submission
       setFormData({
         name: '',
@@ -43,16 +48,14 @@ const BookingForm = () => {
         checkOutDate: '',
         roomType: '',
       });
-
+  
       // Redirect to another page upon successful submission
       router.push('/'); // Replace '/' with the desired path
     } catch (error) {
       console.error('Error submitting booking:', error);
     }
   };
-
-
-
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
