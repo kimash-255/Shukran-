@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="text-center mt-4">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Shukran Restaurant. Made for the SCO 207 assignment project. <br />
-          <span className="font-serif">Courtesy of Google Fonts</span>
+          <span className="font-serif">Courtesy of Web Dev TEchnologies Class</span>
         </p>
       </div>
     </footer>

@@ -1,16 +1,16 @@
-import Events from "@/components/events";
+import ShukranRecreation from "@/components/ShukranRecreation";
 import Layout from "../Layout";
 import Footer from "@/components/footer";
 
-const EventsPage = () => {
+const RecreationPage = () => {
   return (
     <>
       <Layout>
-        <Events />
+        <ShukranRecreation />
       </Layout>
       <Footer />
     </>
   );
 };
 
-export default EventsPage;
+export default RecreationPage;
