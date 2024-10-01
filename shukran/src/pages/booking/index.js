@@ -1,7 +1,11 @@
-import BookingForm from "@/components/booking/bookingform";
+import RecruitmentForm from "@/components/recruitment";
 
 const BookingPage = () => {
-  return <BookingForm/>
+  return (
+    <div>
+      <RecruitmentForm />
+    </div>
+  );
 };
 
 export default BookingPage;
