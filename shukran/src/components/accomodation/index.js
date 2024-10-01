@@ -34,7 +34,7 @@ const roomVarieties = [
   {
     id: 5,
     name: "Tycoon Bungalow",
-    description: "Cozy bungalow located right on the KICC, offering stunning  views and direct access to the sand.",
+    description: "Cozy bungalow located right on the KICC, offering stunning  views .",
     imageUrl: "/img/bungalow.jpeg",
     price: 6300,
   },
